@@ -1,0 +1,40 @@
+/* Styling untuk #DashboardMenu */
+/* Styling untuk #DashboardMenu */
+#DashboardMenu {
+    display: flex; /* Flexbox di dalam menu */
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    justify-content: center; /* Memastikan elemen di dalamnya dipusatkan secara vertikal */
+    align-items: center; /* Memastikan elemen di dalamnya dipusatkan secara horizontal */
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang semi-transparan */
+    height: 100vh; /* Mengisi 100% dari tinggi viewport */
+    width: 100vw; /* Mengisi 100% dari lebar viewport */
+    padding: 20px; /* Padding untuk jarak di dalam */
+    box-sizing: border-box; /* Menyertakan padding dalam perhitungan tinggi dan lebar */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 0; /* Pastikan tidak ada margin tambahan */
+}
+
+button#logout {
+    background-color: #ff3d00; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut yang membulat */
+    padding: 10px 20px; /* Padding atas-bawah dan kiri-kanan */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Menampilkan pointer saat hover */
+    margin-top: 20px; /* Jarak antara tombol logout dengan elemen lain */
+    transition: background-color 0.3s, transform 0.2s; /* Efek transisi */
+}
+
+button#logout:hover {
+    background-color: #d32f2f; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+button#logout:focus {
+    outline: none; /* Menghilangkan outline saat tombol difokuskan */
+}
