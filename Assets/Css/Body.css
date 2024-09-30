@@ -1,0 +1,16 @@
+html, body {
+    height: 100%; /* Pastikan html dan body mengisi seluruh tinggi */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+body {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    background-color: #000000; /* Warna latar belakang hitam */
+    overflow: hidden; /* Mencegah scrolling */
+}
+
+h1 {
+    color: cyan;
+}
