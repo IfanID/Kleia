@@ -1,0 +1,33 @@
+/* Import Body.css */
+@import url('../Body.css');
+
+/* Set background untuk layar loading */
+#LoadingScreen {
+    display: flex;                  /* Gunakan flexbox */
+    justify-content: center;        /* Pusatkan secara horizontal */
+    align-items: center;            /* Pusatkan secara vertikal */           /* Tinggi penuh viewport */
+}
+
+/* Style teks Loading */
+#LoadingScreen p {
+    font-size: 2.5rem;             /* Ukuran font */
+    font-weight: bold;              /* Berat font */
+    color: cyan;                   /* Warna teks cyan */
+    letter-spacing: 2px;           /* Jarak antar huruf */
+    text-align: center;             /* Pusatkan teks */
+    margin: 0;                     /* Hapus margin */
+}
+
+/* Animasi Loading */
+@keyframes loading-dots {
+    0% { content: 'Loading'; }
+    25% { content: 'Loading.'; }
+    50% { content: 'Loading..'; }
+    75% { content: 'Loading...'; }
+    100% { content: 'Loading....'; }
+}
+
+#LoadingScreen p::after {
+    content: 'Loading';
+    animation: loading-dots 2s infinite;
+}
