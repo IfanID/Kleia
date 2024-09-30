@@ -1,0 +1,39 @@
+/* Atur body agar menjadi flex container yang menutupi seluruh layar */
+/* Atur container login */
+#login-container {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen di dalam container secara vertikal */
+    justify-content: center; /* Menyusun elemen di dalam container secara vertikal di tengah */
+    align-items: center; /* Menyusun elemen di dalam container secara horizontal di tengah */
+    width: 100%; /* Membuat container login memenuhi lebar penuh dari elemen parent-nya */
+    max-width: 400px; /* Menetapkan lebar maksimum container login */
+    padding: 20px; /* Menambahkan padding untuk memberi jarak dari tepi container */
+    border-radius: 80px; /* Menambahkan sudut melengkung pada container */
+    background-color: #fff; /* Menetapkan latar belakang putih untuk container login */
+    box-sizing: border-box; /* Memastikan padding dan border dimasukkan dalam ukuran total elemen */
+}
+
+/* Atur tampilan tombol login */
+#login { /* Mengubah id dari google-login menjadi login */
+    background-color: #4285F4; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus border default tombol */
+    padding: 12px 24px; /* Menambahkan padding pada tombol */
+    font-size: 16px; /* Menetapkan ukuran font tombol */
+    border-radius: 10px; /* Menambahkan sudut melengkung pada tombol */
+    cursor: pointer; /* Menampilkan kursor pointer saat berada di atas tombol */
+    display: flex; /* Menggunakan flexbox untuk menyusun ikon dan teks */
+    align-items: center; /* Menyusun ikon dan teks secara vertikal di tengah */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan pada tombol */
+    transition: box-shadow 0.3s ease; /* Menambahkan efek transisi untuk bayangan saat hover */
+}
+
+/* Efek hover untuk tombol login */
+#login:hover { /* Mengubah id dari google-login menjadi login */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Menambahkan bayangan lebih jelas saat hover */
+}
+
+/* Atur ikon dalam tombol login */
+#login .google-icon { /* Mengubah id dari google-login menjadi login */
+    margin-right: 8px; /* Memberi jarak antara ikon dan teks */
+}
