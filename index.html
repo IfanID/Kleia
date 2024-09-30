@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kleia</title>
+
+        <!-- Mengimpor file CSS -->
+        <link rel="stylesheet" href="Assets/Css/Index/Body.css" />
+        <link rel="stylesheet" href="Assets/Css/Index/Login/Login.css" />
+        <link
+            rel="stylesheet"
+            href="Assets/Css/Index/Dashboard/Dashboard.css"
+        />
+        <link
+            rel="stylesheet"
+            href="Assets/Css/Index/LoadingScreen/loadingScreen.css"
+        />
+
+        <!-- Mengimpor ikon -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+        />
+    </head>
+    <body>
+        <!-- Layar Loading -->
+        <div id="LoadingScreen" style="display: block">
+            <p></p>
+        </div>
+
+        <!-- Menu Dashboard -->
+        <div id="DashboardMenu" style="display: none">
+            <h1>aku</h1>
+            <button id="logout">Keluar</button>
+        </div>
+
+        <!-- Mengimpor file JavaScript -->
+        <!-- Mengimpor script Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+
+        <!-- Konfigurasi Firebase -->
+        <script src="Assets/Js/firebase-config.js"></script>
+
+        <!-- Mengimpor auth.js -->
+        <script type="module" src="Assets/Js/Login/auth.js"></script>
+    </body>
+</html>
