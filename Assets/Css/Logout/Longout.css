@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    height: 100vh; /* Mengatur tinggi body sama dengan tinggi viewport */
+    display: flex;
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    justify-content: center; /* Menyusun elemen di atas */
+    align-items: center; /* Menyusun konten di tengah secara horizontal */
+    background-color: #000000; /* Opsional, untuk memberi latar belakang yang lebih baik */
+}
